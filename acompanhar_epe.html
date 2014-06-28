@@ -76,10 +76,10 @@
                <li ><a href="index.html">Início</a></li>
 			  <li ><a href="institucional.html">Institucional</a></li>
 			  <li ><a href="acessibilidade.html">Acessibilidade</a></li>
-			  <li class="active"><a href="contato.html">Contato</a></li>
+			  <li ><a href="contato.html">Contato</a></li>
 			   <li class="nav-header">CONCURSOS</li>
               <li><a href="concursos_abertos.html">Concursos Abertos</a></li>
-              <li><a href="concursos_andamento.html">Concursos Em Andamento</a></li>
+              <li class="active"><a href="concursos_andamento.html">Concursos Em Andamento</a></li>
               <li><a href="concursos_encerrados.html">Concursos Encerrados</a></li>
 			  </ul>
           </div><!--/.well -->
@@ -106,7 +106,7 @@
 			  <div class="control-group">
 				<div class="controls">
 				  <button type="submit" class="btn" value="submit">Enviar</button>				  			
-					<button type="reset" class="btn" value="voltar">Voltar</button>					
+					<button type="reset" class="btn" value="voltar" onclick="voltar()">Voltar</button>					
 				</div>
 			  </div>
 			</form>			
@@ -183,6 +183,9 @@
 	    elem.style.fontSize = originalFontSize+ "em";
 
 	}	
+	function voltar() {
+		location.href="concurso_andamento_epe";
+	}
 	
 	</script>
   </body>
