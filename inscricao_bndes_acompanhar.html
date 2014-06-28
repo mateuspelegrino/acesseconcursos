@@ -3,12 +3,12 @@
   <head>
      <meta charset="iso-8859-1">
    <!-- <meta charset="utf-8"> CORRIGIR CHARSET-->
-    <title>AcesseConcursos - Acessibilidade em organização de Concursos Públicos - Página Concurso Aberto BNDES</title>
+    <title>AcesseConcursos - Acessibilidade em organização de Concursos Públicos - Página Contato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+	<link rel="shortcut icon" href="img/favicon.ico"/>
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -73,49 +73,55 @@
           <div class="well sidebar-nav" id="menu">
             <ul class="nav nav-list">
               <li class="nav-header">MENU</li>
-                <li ><a href="index.html">Início</a></li>
+               <li ><a href="index.html">Início</a></li>
 			  <li ><a href="institucional.html">Institucional</a></li>
 			  <li ><a href="acessibilidade.html">Acessibilidade</a></li>
-			  <li><a href="contato.html">Contato</a></li>
+			  <li ><a href="contato.html">Contato</a></li>
 			   <li class="nav-header">CONCURSOS</li>
-              <li class="active"><a href="concursos_abertos.html">Concursos Abertos</a></li>
+              <li class="active"> <a href="concursos_abertos.html">Concursos Abertos</a></li>
               <li><a href="concursos_andamento.html">Concursos Em Andamento</a></li>
               <li><a href="concursos_encerrados.html">Concursos Encerrados</a></li>
 			  </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span10" id="conteudo">
-		   <h1> Concurso BNDES </h1>
-          <div class="row-fluid">
-            <div class="span10">
-              <h2>Inscrições Abertas</h2>
-             <p><strong><font size="4">Concurso aberto para técnico administrativo do Banco Nacional de Desenvolvimento Econômico e Social.</font></strong></p>
-              <div class="hero-unit">
-                	<div class="alert alert-success">
-    	            <p><strong>Inscrições pela Internet</strong></p>
+		   	<h1> Acompanhar Inscrição - BNDES </h1>
+		   	</br>
+			 	<p>Dados de Cadastro do Concurso</p>					 	
+        	</br>
+			<form class="form-horizontal" action="inscricao_bndes_acompanhar2.html" target="_blank">			  
+			  <div class="control-group">
+				<label class="control-label" for="inputCPF">CPF:</label>				
+				<div class="controls">
+				  <input type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
+				</div>
+			  </div>		
+			<div class="control-group">
+					<label class="control-label" for="inputSenha">Senha:</label>
+					<div class="controls">
+					  <input type="password" maxlength="12" id="inputSenha"required="required" placeholder="********">
 					</div>
-					<p>Inscrições abertas a partir de <strong>10 horas de 10 de junho de 2014 até o dia 30 de junho de 2014 às 23 horas e 59 minutos</strong> pelo Horário de Brasília.</p>
-					<p>Taxa de inscrição R$90,00. </p>
-             	    <p>Os Pedidos de Isenção de Taxa pela Internet estarão abertos a partir de 10 de junho de 2014 até o dia 18 de junho de 2014 às 23 horas e 59 minutos pelo Horário de Brasília.</p>
-					<p>Aplicação da prova dia <strong>25 de julho de 2014</strong>.</p>
-	                <a href="inscricao_bndes.html"><strong> Faça sua inscrição aqui! </strong></a> <br> 
-					<a href="inscricao_bndes_acompanhar.html"> Acompanhe sua inscrição.</a><br>
-					<a href="inscricao_bndes_boleto.html"> Regerar boleto de pagamento.</a><br>
-              </div>  <p><strong><font size="4">Concurso aberto para técnico administrativo do Banco Nacional de Desenvolvimento Econômico e Social.</font></strong></p>
-              <div class="hero-unit">
-	              <div class="alert alert-info">
-        	  		  <p><strong>Publicações</strong></p>
-              	  </div>
-              	  <p> Publicado em 01/06/2014  - <a href="resource/bndes0112_edital.pdf" target="_blank">Edital Nº 0006/2014 (formato .pdf, tamanho 616KB)</a></p>
-              </div>
-           </div><!--/span-->
-			         
-            
+			  </div>			  
+			  <div class="control-group">
+				<div class="controls">
+				  <button type="submit" class="btn" value="submit">Entrar</button>				  			
+					<button type="reset" class="btn" value="voltar" onclick="voltar()">Voltar</button>					
+				</div>
+			  </div>
+			</form>						
+			<div class="control-group" style="display: none">
+			<form class="form-vertical" action="">			  
+					<label class="control-label" for="inputRecuperar">Esqueceu sua senha?</label>
+					<div class="controls">
+					  <button type="submit" class="btn" value="voltar">Recuperar Senha</button>										
+					</div>
+			</form>
+			  </div>	
         </div><!--/span-->
-		</div>
+
       <hr>
       <footer >
-	<div class= "span12">
+<div class= "span12">
 	  <a href="#topo" id="rodape" class="nav-header">Voltar para o topo</a>
 	  <div class="hero-unit">
 	  <p>&copy; AcesseConcursos 2014</p>
@@ -158,9 +164,8 @@
 		</div>		
 		 </div>        
 		</div>
+      </div>
       </footer>
-   
-
 
     </div><!--/.fluid-container-->
 
@@ -184,8 +189,11 @@
 		var elem = document.getElementById("controle");
 	    elem.style.fontSize = originalFontSize+ "em";
 
+	}	
+		function voltar() {
+		location.href="concursos_abertos_bndes.html";
 	}
-			
+	
 	</script>
   </body>
 </html>

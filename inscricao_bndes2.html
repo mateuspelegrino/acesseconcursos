@@ -3,12 +3,12 @@
   <head>
      <meta charset="iso-8859-1">
    <!-- <meta charset="utf-8"> CORRIGIR CHARSET-->
-    <title>AcesseConcursos - Acessibilidade em organização de Concursos Públicos - Página Concurso Aberto BNDES</title>
+    <title>AcesseConcursos - Acessibilidade em organização de Concursos Públicos - Página Contato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+	<link rel="shortcut icon" href="img/favicon.ico"/>
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -73,49 +73,129 @@
           <div class="well sidebar-nav" id="menu">
             <ul class="nav nav-list">
               <li class="nav-header">MENU</li>
-                <li ><a href="index.html">Início</a></li>
+               <li ><a href="index.html">Início</a></li>
 			  <li ><a href="institucional.html">Institucional</a></li>
 			  <li ><a href="acessibilidade.html">Acessibilidade</a></li>
-			  <li><a href="contato.html">Contato</a></li>
+			  <li ><a href="contato.html">Contato</a></li>
 			   <li class="nav-header">CONCURSOS</li>
-              <li class="active"><a href="concursos_abertos.html">Concursos Abertos</a></li>
+              <li class="active"> <a href="concursos_abertos.html">Concursos Abertos</a></li>
               <li><a href="concursos_andamento.html">Concursos Em Andamento</a></li>
               <li><a href="concursos_encerrados.html">Concursos Encerrados</a></li>
 			  </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span10" id="conteudo">
-		   <h1> Concurso BNDES </h1>
-          <div class="row-fluid">
-            <div class="span10">
-              <h2>Inscrições Abertas</h2>
-             <p><strong><font size="4">Concurso aberto para técnico administrativo do Banco Nacional de Desenvolvimento Econômico e Social.</font></strong></p>
-              <div class="hero-unit">
-                	<div class="alert alert-success">
-    	            <p><strong>Inscrições pela Internet</strong></p>
+		   	<h1> Inscrição - BNDES </h1>
+		   	</br>
+			 	<p>Etapa 2 de 2 - Informações do candidato</p>		
+			 	<p><strong>Preencha o formulário para inscrição do concurso BNDES: </strong></p>					
+        	</br>
+			<form class="form-horizontal" action="concursos_abertos_bndes.html">			  
+			  <div class="control-group">
+				<label class="control-label" for="inputCPF">CPF:</label>				
+				<div class="controls">
+				  <input type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
+				</div>
+			  </div>
+			 <div class="control-group">
+					<label class="control-label" for="inputRG">Número de Identidade (RG):</label>
+					<div class="controls"> 
+					  <input type="text" maxlength="12" id="inputRG"required="required" placeholder="Ex: 111111111">
 					</div>
-					<p>Inscrições abertas a partir de <strong>10 horas de 10 de junho de 2014 até o dia 30 de junho de 2014 às 23 horas e 59 minutos</strong> pelo Horário de Brasília.</p>
-					<p>Taxa de inscrição R$90,00. </p>
-             	    <p>Os Pedidos de Isenção de Taxa pela Internet estarão abertos a partir de 10 de junho de 2014 até o dia 18 de junho de 2014 às 23 horas e 59 minutos pelo Horário de Brasília.</p>
-					<p>Aplicação da prova dia <strong>25 de julho de 2014</strong>.</p>
-	                <a href="inscricao_bndes.html"><strong> Faça sua inscrição aqui! </strong></a> <br> 
-					<a href="inscricao_bndes_acompanhar.html"> Acompanhe sua inscrição.</a><br>
-					<a href="inscricao_bndes_boleto.html"> Regerar boleto de pagamento.</a><br>
-              </div>  <p><strong><font size="4">Concurso aberto para técnico administrativo do Banco Nacional de Desenvolvimento Econômico e Social.</font></strong></p>
-              <div class="hero-unit">
-	              <div class="alert alert-info">
-        	  		  <p><strong>Publicações</strong></p>
-              	  </div>
-              	  <p> Publicado em 01/06/2014  - <a href="resource/bndes0112_edital.pdf" target="_blank">Edital Nº 0006/2014 (formato .pdf, tamanho 616KB)</a></p>
-              </div>
-           </div><!--/span-->
-			         
-            
+			  </div>			  
+			<div class="control-group">
+				<label class="control-label" for="inputNome">Nome Completo:</label>				
+				<div class="controls">
+				  <input type="text" id="inputNome" maxlength="11" required="required" placeholder="Ex: JOAO ANTONIO DA SILVA">
+				</div>
+			  </div>
+			 <div class="control-group">
+					<label class="control-label" for="inputData">Data de Nascimento:</label>
+					<div class="controls">
+					  <input type="date" maxlength="12" id="inputData"required="required" placeholder="********">
+					</div>
+			  </div>
+			<div class="control-group">
+				<label class="control-label" for="inputEmail">Email:</label>				
+				<div class="controls">
+				  <input type="email" id="inputEmail" maxlength="11" required="required" placeholder="Ex: mail@mail.com">
+				</div>
+			  </div> 
+			<div class="control-group">
+				<label class="control-label" for="inputEndereco">Endereço:</label>				
+				<div class="controls">
+				  <input type="text" id="inputEndereco" maxlength="100" required="required" placeholder="Ex: RUA PASSOS DA PÁTRIA, 140, Casa">
+				</div>
+			  </div> 
+			  <div class="control-group">
+				<label class="control-label" for="inputBairro">Bairro:</label>				
+				<div class="controls">
+				  <input type="text" id="inputBairro" maxlength="30" required="required" placeholder="Ex: BOA VIAGEM">
+				</div>
+			  </div> 
+			  <div class="control-group">
+				<label class="control-label" for="inputCidade">Cidade:</label>				
+				<div class="controls">
+				  <input type="text" id="inputCidade" maxlength="30" required="required" placeholder="Ex: NITEROI">
+				</div>
+			  </div> 
+			  <div class="control-group">
+				<label class="control-label" for="inputUF">Estado (UF):</label>				
+				<div class="controls">
+				<select id="inputUF" required="required"> 
+					<option value="">Selecione o Estado</option> 
+					<option value="ac">Acre</option> 
+					<option value="al">Alagoas</option> 
+					<option value="am">Amazonas</option> 
+					<option value="ap">Amapá</option> 
+					<option value="ba">Bahia</option> 
+					<option value="ce">Ceará</option> 
+					<option value="df">Distrito Federal</option> 
+					<option value="es">Espírito Santo</option> 
+					<option value="go">Goiás</option> 
+					<option value="ma">Maranhão</option> 
+					<option value="mt">Mato Grosso</option> 
+					<option value="ms">Mato Grosso do Sul</option> 
+					<option value="mg">Minas Gerais</option> 
+					<option value="pa">Pará</option> 
+					<option value="pb">Paraíba</option> 
+					<option value="pr">Paraná</option> 
+					<option value="pe">Pernambuco</option> 
+					<option value="pi">Piauí</option> 
+					<option value="rj">Rio de Janeiro</option> 
+					<option value="rn">Rio Grande do Norte</option> 
+					<option value="ro">Rondônia</option> 
+					<option value="rs">Rio Grande do Sul</option> 
+					<option value="rr">Roraima</option> 
+					<option value="sc">Santa Catarina</option> 
+					<option value="se">Sergipe</option> 
+					<option value="sp">São Paulo</option> 
+					<option value="to">Tocantins</option> 
+				</select>
+				</div>
+			  </div> 
+			<div class="control-group">
+					<label class="control-label" for="inputSenha">Senha:</label>
+					<div class="controls">
+					  <input type="password" maxlength="12" id="inputSenha"required="required" placeholder="********">
+					</div>
+			  </div>
+			  <div class="control-group">
+			 <input type="checkbox" name="inputReal" id="inputReal" required="required">Declaro que todas os dados informados são verdadeiros.</input>
+				
+			  </div>	
+			  <div class="control-group">
+				<div class="controls">
+				  <button type="submit" class="btn" value="submit">Enviar</button>				  			
+					<button type="reset" class="btn" value="voltar" onclick="voltar()">Cancelar</button>					
+				</div>
+			  </div>
+			</form>			
         </div><!--/span-->
-		</div>
+
       <hr>
       <footer >
-	<div class= "span12">
+<div class= "span12">
 	  <a href="#topo" id="rodape" class="nav-header">Voltar para o topo</a>
 	  <div class="hero-unit">
 	  <p>&copy; AcesseConcursos 2014</p>
@@ -158,9 +238,8 @@
 		</div>		
 		 </div>        
 		</div>
+      </div>
       </footer>
-   
-
 
     </div><!--/.fluid-container-->
 
@@ -184,8 +263,10 @@
 		var elem = document.getElementById("controle");
 	    elem.style.fontSize = originalFontSize+ "em";
 
+	}	
+		function voltar() {
+		location.href="concursos_abertos_bndes.html";
 	}
-			
 	</script>
   </body>
 </html>
