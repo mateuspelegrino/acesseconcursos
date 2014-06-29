@@ -27,7 +27,7 @@
                                    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
 
-  <body>
+  <body OnLoad="document.inscricao.inputCPF.focus();">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -89,11 +89,11 @@
 			 	<p>Etapa 2 de 2 - Informações do candidato</p>		
 			 	<p><strong>Preencha o formulário para inscrição do concurso BNDES: </strong></p>					
         	<br>
-			<form class="form-horizontal" action="concursos_abertos_bndes.html">			  
+			<form  name="inscricao" class="form-horizontal" action="concursos_abertos_bndes.html">			  
 			  <div class="control-group">
 				<label class="control-label" for="inputCPF">CPF:</label>				
 				<div class="controls">
-				  <input type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
+				  <input name="inputCPF" type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
 				</div>
 			  </div>
 			 <div class="control-group">
@@ -180,8 +180,13 @@
 					</div>
 			  </div>
 			  <div class="control-group">
-			 <input type="checkbox" name="inputReal" id="inputReal" required="required">Declaro que todas os dados informados são verdadeiros.
-				
+			  <label class="control-label" for="inputReal">Todos os dados informados são reais:</label>
+			  <div class="controls">
+			  	<select id="inputReal" required="required">				
+					<option value="">Não confirmo.</option> 
+					<option value="confirmo">Sim. Confirmo.</option> 					
+				</select>			
+				</div>
 			  </div>	
 			  <div class="control-group">
 				<div class="controls">
@@ -266,8 +271,7 @@
 		location.href="concursos_abertos_bndes.html";
 	}
 	function enviar(){
-		location.href="concursos_abertos_bndes.html";
-		alert("Inscrição efetuada com sucesso");
+		location.href="concursos_abertos_bndes.html";		
 	}
 	</script>
   </body>

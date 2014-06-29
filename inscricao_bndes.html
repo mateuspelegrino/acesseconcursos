@@ -27,7 +27,7 @@
                                    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
 
-  <body>
+  <body OnLoad="document.inscricao.inputCargo.focus();">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -91,11 +91,11 @@
 			 	<p><strong>Preencha o formulário para inscrição do concurso BNDES: </strong></p>			
         	</br>
 			<div>
-			<form class="form-horizontal" action="inscricao_bndes2.html">
+			<form name="inscricao" class="form-horizontal" action="inscricao_bndes2.html">
 			  <div class="control-group">
 				<label class="control-label" for="inputCidade">Cargo Pretendido:</label>				
 				<div class="controls">
-				<select id="inputCargo" required="required"> 
+				<select name="inputCargo" id="inputCargo" required="required"> 
 					<option value="">Selecione o Cargo:</option> 
 					<option value="rj">Técnico Administrativo - Médio</option> 									
 				</select>
@@ -114,10 +114,13 @@
 				</div>
 			  </div> 
 			  <div class="control-group">
-				<label class="control-label" for="inputVaga">Concorrer a vaga para deficientes?</label>				
+				<label class="control-label" for="inputVaga">Tipo de Concorrência</label>				
 				<div class="controls">
-				<input id="inputVaga" name="inputVaga" type="radio" checked="checked" required="required" value="true"> Sim </input>
-				<input id="inputVaga" name="inputVaga" type="radio" required="required" value="false" style="margin-left: 10px;"> Não </input>			
+					<select id="inputVaga" required="required"> 
+					<option value="">Escolha o tipo concorrência de vaga:</option> 
+					<option value="ampla">Ampla concorrência</option> 
+					<option value="def">Deficiêntes físicos</option> 				
+				</select>			
 				</div>
 			  </div> 
 			  <div class="control-group">
@@ -128,12 +131,17 @@
 			  <div class="control-group">
 				<label class="control-label" for="inputAtendimento">No dia da prova, necessitará de algum atendimento especial??</label>				
 				<div class="controls">
-				<input id="inputAtendimento" name="inputAtendimento" type="radio" checked="checked" required="required" value="true"> Sim </input>
-				<input id="inputAtendimento" name="inputAtendimento" type="radio" required="required" value="false" style="margin-left: 10px;"> Não </input>			
+									<select id="inputVaga" required="required"> 
+					<option value="">Escolha se precisará de atendimento especial</option> 
+					<option value="sim">Sim</option> 
+					<option value="nao">Não</option> 				
+				</select>			
 				</div>
 			  </div> 	
 			  <div class="control-group">
-				<label class="control-label" for="inputVisuais">Necessidades visuais (marque as opções necessárias):</label>				
+			  
+			   <p><strong>Marque quantas opções forem necessárias abaixos: </strong></p>
+				<label class="control-label" for="inputVisuais">Necessidades visuais: </label>				
 				<div class="controls">
 				  <input type="checkbox" name="inputVisuais" id="inputVisuais">Prova em braile</input><br>
 				   <input type="checkbox" name="inputVisuais" id="inputVisuais">Prova ampliada 100%</input><br>
@@ -147,7 +155,7 @@
 				</div>
 			  </div>
 			  <div class="control-group">
-				<label class="control-label" for="inputFisica">Necessidades físicas (marque as opções necessárias):</label>				
+				<label class="control-label" for="inputFisica">Necessidades físicas: </label>				
 				<div class="controls">
 				  <input type="checkbox" name="inputFisica" id="inputFisica">Mobiliário especial</input><br>
 				   <input type="checkbox" name="inputFisica" id="inputFisica">Auxílio para preenchimento</input><br>

@@ -27,7 +27,7 @@
                                    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
 
-  <body>
+  <body OnLoad="document.acompanhar.inputCPF.focus();">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -89,11 +89,11 @@
 			<p>Após preenchimento do formulário a seguir com os dados corretos, será aberto o cartão de confirmação em uma outra janela.</p>
         	<p><strong>Digite o CPF (somente números) e a senha utilizada na inscrição do concurso para consultar o cartão de confirmação: </strong></p>			
         	<br>
-			<form class="form-horizontal" action="gerar_cartao_confirmacao_epe.html" target="_blank">
+			<form name="acompanhar" class="form-horizontal" action="gerar_cartao_confirmacao_epe.html" target="_blank">
 			  <div class="control-group">
 				<label class="control-label" for="inputEmail">CPF:</label>				
 				<div class="controls">
-  				  <input type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
+  				  <input name="inputCPF" type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
 
 				</div>
 			  </div>

@@ -27,7 +27,7 @@
                                    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
 
-  <body>
+  <body OnLoad="document.boleto.inputCPF.focus();">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -88,11 +88,11 @@
 		   	<br>
 			 	<p>Dados de Cadastro do Concurso</p>					 	
         	<br>
-			<form class="form-horizontal" action="resource/boleto.pdf" target="_blank">			  
+			<form  name="boleto" class="form-horizontal" action="resource/boleto.pdf" target="_blank">			  
 			  <div class="control-group">
 				<label class="control-label" for="inputCPF">CPF:</label>				
 				<div class="controls">
-				  <input type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
+				  <input name="inputCPF" type="text" id="inputCPF" maxlength="11" required="required" placeholder="Ex: 99999999999">
 				</div>
 			  </div>		
 			<div class="control-group">
